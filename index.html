@@ -39,7 +39,8 @@
   <!-- Home -->
   <section id="home">
     <div class="container mt-5 pt-5">
-      <div class="row d-flex align-items-center">
+      <div class="row d-flex align-items-center" data-aos="fade-up" data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
         <div class="col-12 col-lg-6 mb-5 order-2 order-lg-1">
           <h1 class="playfair underline mb-4" style="width: fit-content;">Shutter<br>Production</h1>
           <p class="mb-4">Shutter Production merupakan perusahan yang bergerak di bidang jasa fotografi dan videografi
@@ -59,7 +60,7 @@
 
   <!-- Our Partners -->
   <section id="partners">
-    <div class="container mt-5" id="partners">
+    <div class="container mt-5" id="partners" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
       <div class="playfair mb-4">
         <h2>Our Partners</h2>
       </div>
@@ -86,12 +87,12 @@
 
   <!-- Portfolio -->
   <section id="portfolio">
-    <div class="container mt-5">
+    <div class="container mt-5" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
       <div class="playfair mb-4">
         <h2>Portfolio</h2>
       </div>
       <div class="row g-0">
-        <div class="col-4">
+        <div class="col-4" data-aos="fade-left">
           <div class="img-hover">
             <img class="portfolio-img" src="assets/img/p2.JPG" style="object-fit: cover; height: 100%;" width="100%">
           </div>
@@ -159,14 +160,15 @@
       </div>
       <div class="row justify-content-between">
         <div class="col-md-4 col-sm-12 mb-3">
-          <class class="col service-box1 d-flex align-items-center justify-content-center">
+          <class class="col service-box1 d-flex align-items-center justify-content-center" data-aos="fade-down"
+            data-aos-offset="300" data-aos-easing="ease-in-sine">
             <span class="circle"></span>
             <h3 class="bold text-center">Choose Your Package</h3>
           </class>
         </div>
 
         <div class="col-md-4 col-sm-12 mb-3">
-          <div class="col service-box2 p-5">
+          <div class="col service-box2 p-5" data-aos="fade-down">
             <h4 class="mb-3 bold" style="color: #F9B234;">Regular</h4>
             <p class="mb-5" style="color: #ACACAC;">One place, 6 hours, one photograpger.</p>
             <p class="mb-5">
@@ -188,7 +190,7 @@
         </div>
 
         <div class="col-md-4 col-sm-12 mb-3">
-          <div class="col service-box2 p-5">
+          <div class="col service-box2 p-5" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h4 class="mb-3 bold" style="color: #F9B234;">Pro</h4>
             <p class="mb-5" style="color: #ACACAC;">Two place, 8 hours, two photograpger.</p>
             <p class="mb-5">
@@ -221,7 +223,8 @@
         <h2>Contact Us</h2>
       </div>
       <div class="row g-0">
-        <div class="col-lg-8 col-md-6 contact-left p-5">
+        <div class="col-lg-8 col-md-6 contact-left p-5" data-aos="fade-left" data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
           <h4 class="bold mb-4" style="color: #F9B234;">Send Us A Message</h4>
           <div class="row">
             <div class="col">
@@ -274,7 +277,8 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 contact-right p-5 d-flex flex-column justify-content-between">
+        <div class="col-lg-4 col-md-6 contact-right p-5 d-flex flex-column justify-content-between"
+          data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <img src="assets/img/Mask Group 2@2x.png" class="segitiga">
           <h4 class="bold mb-4" style="color: white;">Send Us A Message</h4>
           <div class="message-content d-flex flex-column justify-content-between" style="min-height: 200px;">
@@ -324,6 +328,9 @@
     $('#more').collapse({
       toggle: false
     })
+  </script>
+  <script>
+    AOS.init();
   </script>
 </body>
 
