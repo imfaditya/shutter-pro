@@ -1,0 +1,171 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #171717;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4,a,p{
+    color: white;
+    text-decoration: none;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+.playfair{
+    font-family: 'Playfair Display', serif;
+}
+.underline{
+    border-bottom: 1px solid #F9B234;
+}
+
+/* Navbar */
+.navbar{
+    box-shadow: none;
+}
+
+.navbar-brand img{
+    width: 180px;
+}
+
+.nav-link:not(.yellow){
+    color: white !important;
+}
+
+.nav-link:hover{
+    font-weight: 500;
+}
+/* End Navbar */
+
+/* Home */
+.row a:hover{
+    font-weight: 500 !important;
+}
+/* End Home */
+
+/* Partners */
+.logoPartners:hover{
+    transform: scale(1.1);
+}
+/* End Partners */
+
+/* Portfolio */
+.button-portfolio{
+    background-color: #3D3D3D;
+    padding: 10px;
+}
+
+.portfolio-img{
+    transition: all 0.5s;
+}
+
+.img-hover{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.portfolio-img:hover{
+    transform: scale(1.5);
+}
+/* End Portfolio */
+
+/* Service */
+.service-box1{
+    height: 100%;
+    background-color: #F9B234;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle{
+    display: block;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    position: absolute;
+    left: -40px;
+    top: -20px;
+    transition: all 0.5s;
+}
+
+.circle:hover{
+    transform: scale(1.5);
+}
+
+.service-box2{
+    border: 2px solid #F9B234;
+    min-height: 600px;
+}
+
+.service-box3{
+    min-height: 600px;
+}
+
+.button-book{
+    border: 1px solid #F9B234;
+    width: fit-content;
+    transition: all 0.1s;
+}
+
+.button-book:hover{
+    transform: scale(1.03);
+    border: 2px solid #F9B234;
+}
+
+.button-book button{
+    width: 170px !important;
+    height: 55px;
+    background: none;
+    border: none;
+}
+/* End Service */
+
+/* Contact Us */
+.contact-left{
+    border: 2px solid #F9B234;
+}
+
+.contact-right{
+    background-color: #F9B234;
+    min-height: 600px;
+}
+
+.form-group label{
+    color: #F9B234;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.button-message{
+    margin-top: 50px;
+    background-color: #F9B234;
+    width: fit-content;
+    padding: 12px 25px 12px 25px;
+    border-radius: 3px;
+}
+
+.contact-right{
+    position: relative;
+    overflow: hidden;
+}
+.segitiga{
+    position: absolute;
+    bottom: -70px;
+    left: -85px;
+    display: block;
+    transition: all 0.5s;
+}
+
+.segitiga:hover{
+    transform: scale(1.2);
+}
+/* End Contact Us */
