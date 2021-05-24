@@ -78,6 +78,7 @@ h1,h2,h3,h4,a,p{
 
 /* Service */
 .service-box1{
+    min-height: 600px;
     height: 100%;
     background-color: #F9B234;
     position: relative;
