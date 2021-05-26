@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    font-size: 15px;
 }
 
 body{
@@ -10,6 +11,14 @@ body{
 h1,h2,h3,h4,a,p{
     color: white;
     text-decoration: none;
+}
+
+#partners, #service, #footer{
+    /* background-color: #3D3D3D !important; */
+    background-color: #1f1f1f;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    box-shadow: 0px 5px 21px -2px rgba(18,18,18,0.75);
 }
 
 .bold{
@@ -72,17 +81,55 @@ h1,h2,h3,h4,a,p{
 }
 
 .portfolio-img:hover{
-    transform: scale(1.5);
+    transform: scale(1.3);
+}
+
+@media screen and (max-width:576px){
+    .portfolio-desktop{
+        display: none !important;
+    }
+}
+
+.video-js{
+    transition: all 0.2s;
+}
+
+.video-js:hover{
+    transform: scale(1.1);
 }
 /* End Portfolio */
 
+/* Portfolio Mobile */
+.portfolio-mobile{
+    display: none;
+}
+
+@media screen and (max-width:576px){
+    .portfolio-mobile{
+        display: block;
+    }
+}
+/* End Portfolio Mobile */
+
 /* Service */
 .service-box1{
-    min-height: 600px;
+    min-height: 250px;
     height: 100%;
     background-color: #F9B234;
     position: relative;
     overflow: hidden;
+}
+
+@media screen and (max-width:768px){
+    .service-box2, .service-box3{
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width:992px){
+    .mb-tablet{
+        margin-bottom: 1em;
+    }
 }
 
 .circle{
@@ -94,20 +141,16 @@ h1,h2,h3,h4,a,p{
     position: absolute;
     left: -40px;
     top: -20px;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .circle:hover{
     transform: scale(1.5);
 }
 
-.service-box2{
+.service-box2, .service-box3{
     border: 2px solid #F9B234;
-    min-height: 600px;
-}
-
-.service-box3{
-    min-height: 600px;
+    height: 100%;
 }
 
 .button-book{
@@ -141,7 +184,7 @@ h1,h2,h3,h4,a,p{
 
 .form-group label{
     color: #F9B234;
-    font-size: 1.1em;
+    font-size: 1rem;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -170,3 +213,17 @@ h1,h2,h3,h4,a,p{
     transform: scale(1.2);
 }
 /* End Contact Us */
+
+/* Footer */
+.footer p, .footer a{
+    color: rgb(212, 212, 212);
+}
+.footer a{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer a:hover{
+    color: #F9B234;
+}
+/* End Footer */

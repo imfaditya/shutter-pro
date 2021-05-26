@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" href="assets/img/tab-logo.png">
+  <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+  <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -39,7 +41,7 @@
   <!-- Home -->
   <section id="home">
     <div class="container mt-5 pt-5">
-      <div class="row d-flex align-items-center" data-aos="fade-up" data-aos-offset="300"
+      <div class="row d-flex align-items-center" data-aos="fade-up" data-aos-duration="500"
         data-aos-easing="ease-in-sine">
         <div class="col-12 col-lg-6 mb-5 order-2 order-lg-1">
           <h1 class="playfair underline mb-4" style="width: fit-content;">Shutter<br>Production</h1>
@@ -51,7 +53,7 @@
               src="assets/img/arrow.svg" alt=""></a>
         </div>
         <div class="col-12 col-lg-6 mb-5 order-1 order-lg-2">
-          <img style="width: 100%;" src="assets/img/header.png" alt="">
+          <img style="width: 90%;" src="assets/img/header.png" alt="">
         </div>
       </div>
     </div>
@@ -59,25 +61,25 @@
   <!-- End Home -->
 
   <!-- Our Partners -->
-  <section id="partners">
-    <div class="container mt-5" id="partners" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
+  <section id="partners" class="mt-5">
+    <div class="container" data-aos="fade-down" data-aos-duration="300" data-aos-easing="ease-in-sine">
       <div class="playfair mb-4">
         <h2>Our Partners</h2>
       </div>
-      <div class="row">
-        <div style="background-color: white;" class="col m-2 st">
+      <div class="row justify-content-between">
+        <div style="background-color: white; width: fit-content;" class="col m-2">
           <img style="width: 100%;" src="assets/img/canon.png" alt="">
         </div>
-        <div style="background-color: white;" class="col m-2">
+        <div style="background-color: white; width: fit-content;" class="col m-2">
           <img style="width: 100%;" src="assets/img/fuji.png" alt="">
         </div>
-        <div style="background-color: #ffe01a;" class="col m-2">
+        <div style="background-color: #ffe01a; width: fit-content;" class="col m-2">
           <img style="width: 100%;" src="assets/img/nikon.png" alt="">
         </div>
-        <div style="background-color: black;" class="col m-2">
+        <div style="background-color: black; width: fit-content;" class="col m-2">
           <img style="width: 100%;" src="assets/img/sony.png" alt="">
         </div>
-        <div style="background-color: white;" class="col m-2">
+        <div style="background-color: white; width: fit-content;" class="col m-2">
           <img style="width: 100%;" src="assets/img/lumix.png" alt="">
         </div>
       </div>
@@ -86,11 +88,39 @@
   <!-- End Our Partners -->
 
   <!-- Portfolio -->
-  <section id="portfolio">
-    <div class="container mt-5" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
+  <section id="portfolio" class="mt-5">
+    <div class="container">
       <div class="playfair mb-4">
         <h2>Portfolio</h2>
       </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <video id="video" class="video-js vjs-fluid vjs-big-play-centered vjs-theme-city mb-5" controls preload="auto"
+            poster="assets/img/video-thumb.JPG" data-setup="{}">
+            <source src="assets/video/gunung.mp4" type="video/mp4" />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+          </video>
+        </div>
+        <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center align-items-center">
+          <h2 class="playfair mb-4 align-self-start">A Short Story Of <br><strong class="underline">Gunung
+              Kendeng</strong>
+          </h2>
+          <p>Berlatar belangkang di desa citorek, gunung kendeng menjadi destiniasi wisata yang jarang para wisatawan
+            tau, karena akses yang sulit di jangkau dan kurang nya informasi, dibalik semua itu gunung kendeng memiliki
+            view yang bagus karena dikelilingi berbagai gunung lain.</p>
+          <p>Merupakan salah satu projek yang pernah kami garap pada awal tahun 2020. Team kami sangatlah flexibel, siap
+            berada pada lokasi yang sedikit menantang sekalipun.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container portfolio-desktop mt-5" data-aos="fade-down" data-aos-duration="500"
+      data-aos-easing="ease-in-sine">
       <div class="row g-0">
         <div class="col-4" data-aos="fade-left">
           <div class="img-hover">
@@ -146,29 +176,70 @@
       <div class="button-portfolio text-center">
         <a class="me-4 mt-5" style="color: #F9B234;" data-bs-toggle="collapse" href="#collapseExample" role="button"
           aria-expanded="false" aria-controls="collapseExample">
-          More About Us <img class="ms-2" src="assets/img/arrow.svg" alt="">
+          More<img class="ms-2" src="assets/img/arrow.svg" alt="">
         </a>
       </div>
+    </div>
+
+    <div class="container portfolio-mobile mt-5" data-aos="fade-down" data-aos-duration="500"
+      data-aos-easing="ease-in-sine">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/p1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/p2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/p3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/p4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/p5.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/p6.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/p7.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/p8.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
   </section>
   <!-- End Portfolio -->
 
   <!-- Service -->
-  <section id="service">
-    <div class="container mt-5">
+  <section id="service" class="mt-5">
+    <div class="container">
       <div class="playfair mb-4">
         <h2>Service</h2>
       </div>
       <div class="row justify-content-between">
-        <div class="col-md-4 col-sm-12 mb-3">
-          <class class="col service-box1 d-flex align-items-center justify-content-center" data-aos="fade-down"
-            data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="col-lg-4 mb-tablet col-md-12">
+          <div class="col service-box1 d-flex align-items-center justify-content-center" data-aos="fade-down"
+            data-aos-duration="500" data-aos-easing="ease-in-sine">
             <span class="circle"></span>
             <h3 class="bold text-center">Choose Your Package</h3>
-          </class>
+          </div>
         </div>
 
-        <div class="col-md-4 col-sm-12 mb-3">
-          <div class="col service-box2 p-5" data-aos="fade-down">
+        <div class="col-lg-4 col-md-6 mb-tablet col-sm-12">
+          <div class="col service-box2 p-5" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-sine">
             <h4 class="mb-3 bold" style="color: #F9B234;">Regular</h4>
             <p class="mb-5" style="color: #ACACAC;">One place, 6 hours, one photograpger.</p>
             <p class="mb-5">
@@ -189,8 +260,8 @@
           </div>
         </div>
 
-        <div class="col-md-4 col-sm-12 mb-3">
-          <div class="col service-box2 p-5" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-tablet">
+          <div class="col service-box3 p-5" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-sine">
             <h4 class="mb-3 bold" style="color: #F9B234;">Pro</h4>
             <p class="mb-5" style="color: #ACACAC;">Two place, 8 hours, two photograpger.</p>
             <p class="mb-5">
@@ -199,7 +270,6 @@
               customer.
             </p>
             <h4 style="color: #F9B234;">IDR 1500K</h4>
-
             <div class="button-book mt-5">
               <button>
                 <a href="">
@@ -218,13 +288,12 @@
 
   <!-- Contact Us -->
   <section id="contact">
-    <div class="container mt-5">
+    <div class="container mt-5" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-sine">
       <div class="playfair mb-4">
         <h2>Contact Us</h2>
       </div>
       <div class="row g-0">
-        <div class="col-lg-8 col-md-6 contact-left p-5" data-aos="fade-left" data-aos-offset="300"
-          data-aos-easing="ease-in-sine">
+        <div class="col-lg-8 col-md-6 contact-left p-5">
           <h4 class="bold mb-4" style="color: #F9B234;">Send Us A Message</h4>
           <div class="row">
             <div class="col">
@@ -277,24 +346,23 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 contact-right p-5 d-flex flex-column justify-content-between"
-          data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="col-lg-4 col-md-6 contact-right p-5 d-flex flex-column justify-content-between">
           <img src="assets/img/Mask Group 2@2x.png" class="segitiga">
           <h4 class="bold mb-4" style="color: white;">Send Us A Message</h4>
           <div class="message-content d-flex flex-column justify-content-between" style="min-height: 200px;">
             <div class="message-logo">
               <img src="assets/img/map-marker-xxl@2x.png" alt="">
-              <p style="color: white; font-weight: 300; display: inline; font-size: 1.1em; margin-left: 10px;">Bandung,
+              <p style="color: white; font-weight: 300; display: inline; font-size: 1rem; margin-left: 10px;">Bandung,
                 Indonesia.</p>
             </div>
             <div class="message-logo">
               <img src="assets/img/phone-2-xxl@2x.png" alt="">
-              <p style="color: white; font-weight: 300; display: inline; font-size: 1.1em; margin-left: 10px;">
+              <p style="color: white; font-weight: 300; display: inline; font-size: 1rem; margin-left: 10px;">
                 0822123456789</p>
             </div>
             <div class="message-logo">
               <img src="assets/img/email-12-xxl@2x.png" alt="">
-              <p style="color: white; font-weight: 300; display: inline; font-size: 1.1em; margin-left: 10px;">
+              <p style="color: white; font-weight: 300; display: inline; font-size: 1rem; margin-left: 10px;">
                 shutter@unpas.ac.id</p>
             </div>
           </div>
@@ -312,11 +380,39 @@
   <!-- End Contact Us -->
 
   <!-- Footer -->
-  <div class="container mt-5 pt-3 mb-5 d-flex justify-content-center align-items-center flex-column">
-    <img src="assets/img/logo.png" width="200px" class="mb-3">
-    <p>Capture Your Moment With Us</p>
-    <p>Since 2019 @ Bandung, Indonesia</p>
-    <p>Copyright 2021</p>
+  <div id="footer" class="footer mt-5 pt-5 d-flex justify-content-center align-items-center flex-column">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-tablet">
+          <img src="assets/img/logo.png" width="200px" class="mb-3">
+          <p>Capture Your Moment With Us</p>
+          <p>Since 2019 @ Bandung, Indonesia</p>
+        </div>
+        <div class="col-lg-4 sitemap col-md-6 mb-tablet">
+          <p style="color: #F9B234;">Sitemap</p>
+          <a href="#home">Home</a>
+          <a href="#partners">Partners</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#service">Service</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-tablet">
+          <div class="col">
+            <div class="form-group">
+              <label style="margin-bottom: 10px; margin-top: 0;" for="inputEmail4">Subscribe Our Newlsetter</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              <button class="btn mt-3" style="background-color:#F9B234; color: white;">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="width: 100%;">
+      <div class="col-12 text-center mt-3">
+        <p>Copyright 2021</p>
+      </div>
+    </div>
+
   </div>
   <!-- End Footer -->
 
@@ -324,13 +420,14 @@
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    $('#more').collapse({
-      toggle: false
-    })
-  </script>
+  <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    var player = videojs('video', {
+      fluid: true
+    });
   </script>
 </body>
 
